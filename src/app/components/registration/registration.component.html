@@ -1,0 +1,8 @@
+<div>
+  <form (submit)="onSubmit()">
+  <div *ngFor="let field of fields">
+    <input type="text" placeholder={{field.placeholder}} [(ngModel)]="user[field.fieldName]" name={{field.fieldName}}>
+  </div>
+    <input type="submit" value="submit">
+  </form>
+</div>

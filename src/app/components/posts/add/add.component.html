@@ -1,0 +1,7 @@
+<div>
+  <form (submit)="onSubmit()">
+    <input type="text" placeholder='title' [(ngModel)]="post.title" name='title'>
+    <input type="text" placeholder='body' [(ngModel)]="post.body" name='body'>
+    <input type="submit" value="submit">
+  </form>
+</div>
